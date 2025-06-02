@@ -5,7 +5,43 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #ADD5E6;
+    color: #ffffff;
+    
 }
+
+h2, h3, h4, h5, h6,
+body, p {
+  font-family: 'Poppins', sans-serif; /* or 'Roboto', sans-serif; */
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul li{
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
