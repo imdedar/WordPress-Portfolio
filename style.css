@@ -255,6 +255,54 @@ header{
   margin-right: 10px;
   font-size: 16px;
 }
+
+.project-title{
+    width: 70%;
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card{
+    width: 32%;
+    gap: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0073AA;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff;
+    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+.card h3 {
+    padding: 10px;
+    font-size: 16px;
+    color: #0073AA;
+    
+}
+.card p {
+    padding: 10px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.cards :hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 /* Your mobile-specific styles here */
 @media (max-width: 767px) {
 
@@ -326,7 +374,15 @@ header{
         font-size: 20px;
     }
 
+    .cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
+  .card {
+    width: 90%;
+  }
 }
 
 
