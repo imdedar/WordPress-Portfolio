@@ -317,11 +317,10 @@ header{
     /* border: 1px solid #0073AA; */
 
 }
-.contact-arera{
+/* .contact-arera{
     display: flex;
-    
 
-}
+} */
 .get-in-touch{
     display: flex;
     background-color:#f0f4f8;
@@ -329,9 +328,11 @@ header{
     width: 65%;
     /* border: 1px solid #0073AA; */
 }
+
 .contact-area{
     display: flex;
 }
+
 .contact{
     width: 100%;
     padding: 20px;
@@ -341,9 +342,6 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     
-}
-.form-section{
-   /* border: 1px solid #0073AA; */
 }
 
 .my-contact-section-area{
@@ -389,7 +387,7 @@ header{
   cursor: pointer;
 }
 
-.phone-section, .email-section, .address-section{
+.phone-section, .email-section, .address-section, .social-icons{
     display: flex;
     /* border: 1px solid #0073AA;
     border-radius: 5px; */
@@ -398,6 +396,18 @@ header{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-content: center;
     align-items: center;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding: 10px;
+    /* color: #0073AA; */
+    /* background-color: #ffffff; */
+     background-color:#f0f4f8;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .my-phone, .my-email, .my-address{
@@ -415,18 +425,39 @@ header{
     margin: 10px;
     
 }
-
-/* .social-icons{
-    display: flex;
-    border: 1px solid #0073AA;
-    border-radius: 5px;
+footer{
+    background-color: #333333;;
+    color: #f0f4f8;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+.footer-text{
     font-size: 14px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    align-items: center;
-} */
-
+    /* color: #333333; */
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-bottom: 1px solid #666666;
+}
+.footer-text i{
+    color: #0073AA;
+    padding-bottom: 20px;
+}
+.footer-text p{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.footer-content{
+    /* background-color: #ADE8F4; */
+    /* color: #333333; */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    font-size: 14px;
+}
 /* mobile-specific styles here */
 @media (max-width: 767px) {
 
@@ -545,6 +576,32 @@ header{
         width: 100%;
         margin-bottom: 20px;
     }
+    .contact-area{
+    display: flex;
+    flex-direction: column;
+}
+    .my-contact-section-area {
+        width: 100%;
+        padding: 20px;
+    }
+    .social-icons {
+        flex-direction: row;
+        align-items: center;
+        height: 60px;
+        /* gap: 20px; */
+    }
+    .phone-section, .email-section, .address-section {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .my-phone, .my-email, .my-address {
+        width: 100%;
+        text-align: center;
+    }
+.social-icons{
+    width: 100%;
+}
 }
 
 
