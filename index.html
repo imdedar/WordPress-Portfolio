@@ -11,21 +11,21 @@
 <body>
 <div class="container">
     <header>
-    <div class="header-container">
-        <div class="logo">
-             <i class="fas fa-code fa-2x"></i>
-            <h1>Kazi Nurul</h1>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#home"><i class="fas fa-code fa-2x"></i></a>
+                <a href="#home"><h1>Kazi Nurul</h1></a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    </header>
 <main>
     <div class="showcase">
         <section id="home" class="hero">
@@ -33,7 +33,7 @@
             <h2>Hi, I'm Kazi Nurul</h2>
             <h2 class="highlight">WordPress Developer</h2>
             <p>I create beautiful, responsive, and high-performing WordPress websites tailored to your specific needs and business goals.</p>
-            <a href="#viewmywork" class="btn btn-primary">view my work</a>
+            <a href="#projects" class="btn btn-primary">view my work</a>
             <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
     </section>
@@ -75,7 +75,7 @@
         <h1>Recent Projects</h1>
         <p class="project-title">Take a look at some of my recent WordPress projects. Each one is carefully crafted to meet the unique needs of the client.</p>
     </div>
-    <div class="cards">
+    <div class="cards" id="cards">
         <div class="card">
             <img src="/Images/modern business website.png" alt="Project 1">
             <h3>Modern Business Website</h3>
@@ -91,6 +91,11 @@
             <h3>Food & Recipe Blog</h3>
             <p>Content-focused WordPress blog with custom category layouts and recipe functionality.</p>
         </div>
+        <!-- hover message -->
+         <div id="hover-message" style="display: none; text-align: center; color: green; font-weight: bold; margin-top: 20px;">
+  👋 Thanks for checking out my projects!
+        </div>
+
     </div>
 </section>
 <section id="contact">
