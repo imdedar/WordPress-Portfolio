@@ -350,6 +350,14 @@ header{
         width: 100%;
     }
 
+    .heroimg {
+        width: 60%;
+        height: auto;
+        border-radius: 50%;
+        border: 1px solid #0073AA;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
     .hero-content p{
         font-size: 14px;
         padding-bottom: 20px;
@@ -372,6 +380,19 @@ header{
 
     .hero-content h2 {
         font-size: 20px;
+    }
+
+    .skill-section{
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+        
+    }
+
+    .about, .my-skills {
+        width: 100%;
+        padding: 20px;
+        padding: 10px;
     }
 
     .cards {
