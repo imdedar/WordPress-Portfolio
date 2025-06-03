@@ -146,12 +146,14 @@ header{
 .btn-primary{
     background-color: #0073AA;
      color: #ffffff;
+     border: 1px solid #ffffff;
      margin-right: 8px;
 }
 
 .btn-secondary{
     background-color: #ffffff;
     color: #0073AA;
+    border: 1px solid #0073AA;
 }
 
 .btn-primary:hover{
@@ -162,6 +164,7 @@ header{
 .btn-secondary:hover{
     background-color: #0073AA;
     color: #ffffff;
+    border: 1px solid #0073AA;
     transition: background-color 0.4s ease;
 }
 
@@ -303,6 +306,67 @@ header{
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
+
+#contact{
+    /* padding:20px; */
+    background-color: #f0f4f8;
+    border: 1px solid #0073AA;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.get-in-touch{
+    display: flex;
+    background-color:#f0f4f8;
+    padding-top: 30px;
+}
+
+.contact{
+    width: 70%;
+    padding: 20px;
+    border: 1px solid #0073AA;
+    margin-right: 10px;
+}
+
+.social{
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #0073AA;
+    /* margin: 10px; */
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0073AA;
+  text-align: left;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #0073AA;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0073AA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
 /* Your mobile-specific styles here */
 @media (max-width: 767px) {
 
@@ -404,6 +468,23 @@ header{
   .card {
     width: 90%;
   }
+
+  .get-in-touch {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+  .form-section{
+    width: 100%;
+    padding: 20px;
+    
+  }
+    .contact, .social {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 
